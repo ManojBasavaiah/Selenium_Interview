@@ -27,21 +27,21 @@ public class HandleMultipleDropdowns {
 
         }
     public static void selectOptions(List<WebElement> Options, String... value){
-        for (WebElement op:Options){
-            if(!value[0].equalsIgnoreCase("all")){
-                String txt=op.getText();
-                for(String val:value){
-                    if(txt.equals(val)){
-                        op.click();
-                        break;
-                    }
-                }
-            }
-            else if(op.getText().equals(value)){
+for (WebElement op:Options){
+//            if(!value[0].equalsIgnoreCase("all")){
+//                String txt=op.getText();
+//                for(String val:value){
+//                    if(txt.equals(val)){
+//                        op.click();
+//                        break;
+//                    }
+//                }
+//            }
+            if(op.getText().equals(value)){
                 op.click();
                 break;
             }
+        }}
         }
-        }
-    }
+
 
