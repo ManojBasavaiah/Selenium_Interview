@@ -27,6 +27,7 @@ public class HandleMultipleDropdowns {
 
         }
     public static void selectOptions(List<WebElement> Options, String... value){
+        //String..
 for (WebElement op:Options){
 //            if(!value[0].equalsIgnoreCase("all")){
 //                String txt=op.getText();
